@@ -1,26 +1,56 @@
-// 1. Set the variable `givenName` to the string "Addison".
+// // 1. Set the variable `givenName` to the string "Addison".
+let givenName = 'Addison'
 
 // 2. Set candies equal to 20, people to 6, and leftover equal
-// to the remainder of dividing 20 by 6.
+// // to the remainder of dividing 20 by 6.
+let candies = 20
+let people = 6
+let leftover = 20 % 6
 
-// 3. Create a function called greeting that returns "Hello, <name>!",
-// where <name> is the name given as an argument to the function.
+// // 3. Create a function called greeting that returns "Hello, <name>!",
+// // where <name> is the name given as an argument to the function.
+function greeting(person) {
+    return "Hello, " + person + "!"
+}
 
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not. An odd number is a
-// number which, when divided by 2, has a remainder of 1 or -1.
+// // number which, when divided by 2, has a remainder of 1 or -1.
+function isOdd(number) {
+    if (number % 2 === 0){
+        return false
+    }
+    else if (Number.isInteger[number]){
+        return true
+    }
 
-// 5. Create a function called isEven that, given a number, will
-// return true if it is even and false if it is not. An even number is a
-// number which, when divided by 2, has a remainder of 0.
+    }
+
+
+// // 5. Create a function called isEven that, given a number, will
+// // return true if it is even and false if it is not. An even number is a
+// // number which, when divided by 2, has a remainder of 0.
+// function isEven(number) {
+//     if (!isOdd[number] && Number.isInteger[number]) {
+//         return true
+//     }
+//     else {
+//         return false
+//     }
+//     }
 
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
+// function fahrenheitToCelsius(fTemp)
+    let newTemp= fTemp - 32 * 5/9
+//     return Celsius
 
 // 7. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
+// function celsiusToFahrenheit (ctemp)
+//     return Fahrenheit
 
 // 8. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -28,10 +58,18 @@
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
+// fahrenheitToKelvin (ftemp)
+//     return Kelvin
 
 // 9. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
+// function lesser (x + y)
+//     return lesser number
+//     if lesser
+//     return true
+//     if else
+//     return false
 
 // 10. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
@@ -44,6 +82,14 @@
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
+// function multigreeting (name + lang)
+//     return ("Hello, (name)!") in specified lang
+//     if en (Hello, )
+//     if es (¡Hola, )
+//     if fr (Bonjour, )
+//     if eo (Saluton, )
+//     if else
+//         return false
 
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
@@ -71,3 +117,5 @@
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
+// function gcd (2 arguments)
+//     return greateastcommondivisor
