@@ -17,40 +17,42 @@ function greeting(person) {
 // return true if it is odd and false if it is not. An odd number is a
 // // number which, when divided by 2, has a remainder of 1 or -1.
 function isOdd(number) {
-    if (number % 2 === 0){
-        return false
-    }
-    else if (Number.isInteger[number]){
+    if (number % 2 === 1 | number % 2 === -1){
         return true
     }
-
+    else {
+        return false
+    }
     }
 
 
 // // 5. Create a function called isEven that, given a number, will
 // // return true if it is even and false if it is not. An even number is a
 // // number which, when divided by 2, has a remainder of 0.
-// function isEven(number) {
-//     if (!isOdd[number] && Number.isInteger[number]) {
-//         return true
-//     }
-//     else {
-//         return false
-//     }
-//     }
+function isEven(number) {
+    if (number % 2 ===0){
+        return true
+    }
+    else {
+        return false
+    }
+}
 
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
-// function fahrenheitToCelsius(fTemp)
-    let newTemp= fTemp - 32 * 5/9
-//     return Celsius
+function fahrenheitToCelsius(fahrenheit) {
+    let celsius = (fahrenheit - 32) * 5/9
+        return celsius
+}
 
 // 7. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
-// function celsiusToFahrenheit (ctemp)
-//     return Fahrenheit
+function celsiusToFahrenheit (celsius) {
+    let fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+}
 
 // 8. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -58,18 +60,21 @@ function isOdd(number) {
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
-// fahrenheitToKelvin (ftemp)
-//     return Kelvin
+function fahrenheitToKelvin (fahrenheit) {
+    let kelvin = fahrenheitToCelsius (fahrenheit) + 273.15
+    return kelvin
+}
 
 // 9. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
-// function lesser (x + y)
-//     return lesser number
-//     if lesser
-//     return true
-//     if else
-//     return false
+function lesser (num1, num2) {
+    if (num1 > num2) {
+        return num2
+    } else {
+        return num1
+    }
+}
 
 // 10. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
@@ -82,14 +87,20 @@ function isOdd(number) {
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
-// function multigreeting (name + lang)
-//     return ("Hello, (name)!") in specified lang
-//     if en (Hello, )
-//     if es (¡Hola, )
-//     if fr (Bonjour, )
-//     if eo (Saluton, )
-//     if else
-//         return false
+function multigreeting (name, lang) {
+    if (lang == 'en') {
+        return ('Hello, ' + name + '!')
+    }
+    if (lang == 'es') {
+        return ('¡Hola, ' + name + '!')
+    }
+    if (lang == 'fr') {
+        return ('Bonjour, ' + name + '!')
+    }
+    if (lang == 'eo') {
+        return ('Saluton, ' + name + '!')
+    }
+    }
 
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
@@ -117,5 +128,25 @@ function isOdd(number) {
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
-// function gcd (2 arguments)
-//     return greateastcommondivisor
+
+/*function gcd(a, b) {
+    let gcd = g * 2**d
+    let d = 0
+    while (a.isEven && b.isEven) {
+    a = a/2
+    b = b/2
+    d = d + 1
+    } while (a != b) {
+        if (a.isEven) {
+        return a = a/2
+    }
+    else if (b.isEven) {
+        return b = b/2
+    }
+    else if (a > b) {
+        return a = (a – b) / 2
+    }
+    else (b = (b – a) / 2 && g = a) {
+    return gcd
+    }
+} */
